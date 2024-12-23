@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Game with Japanese Theme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Bingo Game</h1>
+    <div id="language-switcher">
+        <label for="language-select">Language:</label>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+        </select>
+    </div>
+    <div id="rules-section">
+        <h2 id="rules-title">Bingo Rules</h2>
+        <p id="rules-content">
+            Bingo is a game of chance where each player has a card with a 5x5 grid of numbers. The objective is to mark off numbers on your card as they are called out. The first player to mark off a complete row, column, or diagonal shouts "Bingo!" and wins the game.
+        </p>
+    </div>
+    <div id="registration">
+        <h2 id="registration-title">Player Registration</h2>
+        <form id="registration-form">
+            <input type="text" id="player-name" placeholder="Enter your name" required>
+            <button type="submit" id="add-player-button">Add Player</button>
+        </form>
+    </div>
+    <div id="game-status"></div>
+    <div id="players"></div>
+    <button id="start-game">Start Game</button>
+
+    <div id="session-records">
+        <h2 id="records-title">Session Records</h2>
+        <ul id="records-list"></ul>
+    </div>
+
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type a message...">
+        <button id="send-chat">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

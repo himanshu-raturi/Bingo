@@ -1,0 +1,163 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* Use a Japanese font */
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+#language-switcher {
+    margin: 20px;
+}
+
+#rules-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    width: 50%;
+    margin: 20px auto;
+}
+
+#registration {
+    margin: 20px;
+}
+
+#registration-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#game-status {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 5px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cell.marked {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cell:hover {
+    background-color: #d3d3d3;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.player.turn {
+    border: 2px solid #FFD700;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.manager {
+    border: 2px solid gold;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.request-transfer {
+    margin-top: 10px;
+    display: none;
+}
+
+#session-records {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    width: 50%;
+    margin: 20px auto;
+}
+
+#chat-container {
+    margin-top: 20px;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#chat-input {
+    width: 80%;
+    padding: 10px;
+}
+
+#send-chat {
+    padding: 10px;
+}
