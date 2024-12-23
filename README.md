@@ -24,5 +24,5 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-username/bingo-game.git
+   git clone https://github.com/himanshu-raturi/bingo-game.git
    cd bingo-game
